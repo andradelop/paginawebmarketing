@@ -1,0 +1,250 @@
+/* Estilo para el cuerpo de la página */
+body {
+    background-color: #000d1e;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Estilo para el logo y las palabras */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px; /* Ajusta la distancia inferior del logo */
+    margin-top: 100PX;
+}
+
+.logo {
+    width: 250px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin: 0 auto; /* Centra horizontalmente el logo */
+}
+
+.small-text {
+    font-size: 16px; /* Tamaño de fuente más pequeño para las palabras */
+    margin-top: 20px; /* Ajusta la distancia superior de las palabras */
+}
+
+/* Estilo para el texto h1 */
+h1.white-text {
+    text-align: center;
+    font-size: 24px; /* Tamaño de fuente más pequeño */
+    color: white; /* Cambia el color del texto a blanco */
+    margin-top: 20px; /* Ajusta la distancia superior del texto */
+}
+
+/* Estilo para las palabras */
+.small-text {
+    font-size: 16px; /* Tamaño de fuente más pequeño para las palabras */
+    margin-top: 20px; /* Ajusta la distancia superior de las palabras */
+}
+
+
+.about-us {
+    text-align: center; /* Centra el texto horizontalmente */
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.about-us h2 {
+    font-size: 40px; /* Tamaño de fuente para el título */
+}
+
+.about-us p {
+    font-size: 25px; /* Tamaño de fuente para la descripción */
+}
+
+
+
+/* Estilo para el botón de hamburguesa */
+.menu-toggle {
+    background: #d066cd; /* Color de fondo */
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px 12px; /* Espaciado interior */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-left: 20px; /* Agregar margen izquierdo para separar del borde */
+    top: 50%; /* Centra verticalmente el botón en la parte izquierda */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px; /* Aumenta la altura para dar más espacio */
+    width: 40px; /* Aumenta el ancho para dar más espacio */
+    position: fixed; /* Hace que el botón sea fijo en la ventana */
+    z-index: 999; /* Asegura que esté en la parte superior */
+}
+
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.menu-toggle.menu-open .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle.menu-open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.menu-open .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Estilo para el menú de navegación */
+.fullscreen-menu {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.fullscreen-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.fullscreen-menu ul li {
+    margin-bottom: 20px;
+}
+
+.fullscreen-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.fullscreen-menu.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Esto centra verticalmente el botón en la página */
+}
+
+.btn {
+    /* Los estilos del botón permanecen iguales */
+    background-color: #d066cd;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2f45b1;
+}
+
+/* Estilo para el botón "Cerrar" en el menú de navegación */
+#close-menu-button {
+    background-color: #d066cd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px; /* Ajusta la distancia superior para alinear con las categorías */
+    margin-left: 40px; /* Ajusta la distancia izquierda */
+    margin-right: 0px; /* Añade un margen a la derecha para separarlo del borde */
+}
+
+#close-menu-button:hover {
+    background-color: #2f45b1; /* Cambia el color al pasar el cursor por encima */
+}
+
+/* Opcional: Cambia el color de fondo del botón de hamburguesa al pasar el cursor */
+.menu-toggle:hover {
+    background-color: rgb(204, 144, 189);
+}
+
+
+
+/* Estilo para el título del proceso */
+.section-title {
+    color: white; /* Color blanco */
+    text-align: center; /* Texto centrado */
+    margin-top: 100px; /* Espacio superior para separarlo de los pasos */
+    font-size: 50px;
+}
+
+
+/* Estilo para el contenedor de pasos */
+.step-container {
+    display: flex;
+    flex-direction: row; /* Alinea los pasos en una fila */
+    justify-content: space-between; /* Distribuye los pasos de manera uniforme */
+    background-color: #000d1e;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los pasos se envuelvan en una nueva línea si no caben en una sola fila */
+}
+
+/* Estilo para cada paso */
+.step {
+    flex: 1;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    max-width: calc(25% - 20px);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: background-color 0.3s; /* Transición para el cambio de color */
+}
+
+/* Estilo para el título de cada paso */
+.step h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Estilo para la descripción de cada paso */
+.step p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Cambio de color al pasar el cursor sobre el paso */
+.step:hover {
+   
+    transform: translateY(-5px); /* Levanta el paso al pasar el cursor por encima */
+
+    background-color: #ffd700; /* Color dorado al pasar el cursor */
+}
+/* Estilos para los enlaces en el footer */
+.footer-links {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    order: 2; /* Cambia el orden al centro */
+    text-align: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white; /* Texto en blanco */
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor por encima */
+}

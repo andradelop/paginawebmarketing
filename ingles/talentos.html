@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msmm Agency</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../talentos.css">
+    <link rel="stylesheet" href="../banderas.css">
+    <style>
+        /* Style for words with animation */
+        .word-transition {
+            animation: slideDown 1s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <button class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+<!-- Add language selector with flag images -->
+<div class="language-selector">
+    <a href="../talentos.html">
+        <img src="../imagenes/banderas/es.svg" alt="Spanish" title="Spanish">
+    </a>
+    <a href="talentos.html">
+        <img src="../imagenes/banderas/gb.svg" alt="English" title="English">
+    </a>
+</div>
+    <nav class="fullscreen-menu" id="fullscreen-menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="agencia.html">AGENCY</a></li>
+            <li><a href="servicios.html">SERVICES</a></li>
+            <li><a href="talentos.html">TALENTS</a></li>
+            <li><a href="equipo.html">TEAM</a></li>
+            <li><a href="contactonos.html">CONTACT US</a></li>
+        </ul>
+        <button id="close-menu-button">Close</button>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <a href="index.html">
+                <img src="../imagenes/logopng.png" alt="Msmm Agency Logo" class="logo">
+            </a>
+            <h1>
+                <span id="word1" class="word-transition">OUR TALENTS</span>
+            </h1>
+        </div>
+    </section>
+
+    <section class="equipo-section">
+        <div class="container">
+            <div class="equipo-row">
+                <!-- Ibai's Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/ibai.jpg" alt="Ibai">
+                        <h3>Ibai</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>Ibai is known for his charisma, humor, and closeness to his followers. He has more than 7 million subscribers on YouTube and over 9 million followers on Twitch, where he usually streams video games, talks, interviews, and special events. Some of his most famous videos are the ones he makes with footballers like Leo Messi, Sergio Agüero, or Gerard Piqué.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Auronplay's Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/auronplay.jpg" alt="Auronplay">
+                        <h3>Auronplay</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>AuronPlay is a YouTuber, streamer, and internet celebrity who creates entertainment videos based on video games, humor, parodies, and other topics. He has more than 20 million subscribers on YouTube and 14 million followers on Twitch.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rubius' Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/rubius.jpg" alt="Rubius">
+                        <h3>Rubius</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>El Rubius is a Hispanic-Norwegian YouTuber, streamer, and internet celebrity who creates entertainment videos based on video games, humor, parodies, and other topics. He has more than 40 million subscribers on YouTube and 14 million followers on Twitch. He is the biggest YouTuber in Spain and one of the most popular in the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hola Soy Germán's Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/german.jpg" alt="Hola Soy Germán">
+                        <h3>Hola Soy Germán</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>Germán Garmendia is a Chilean content creator who succeeded on YouTube with his humor and entertainment videos. Besides being a YouTuber, he is a comedian, singer-songwriter, writer, and social activist. His two channels, HolaSoyGerman and JuegaGerman, have over 80 million subscribers. He is one of the most influential internet personalities.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Marta Díaz's Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/martadiaz.jpg" alt="Marta Díaz">
+                        <h3>Marta Díaz</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>Marta Díaz is an influencer with over 3 million followers on Instagram who follow her daily life.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dulceida's Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/dulceida.jpg" alt="Dulceida">
+                        <h3>Dulceida</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>Dulceida has become the ultimate influencer in Spain. With 3.3 million followers on Instagram, the Catalan started sharing her life and style on social media long before knowing it could be a profession.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Biyín's Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/biyin.jpg" alt="Biyín">
+                        <h3>Biyín</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>Biyín has become one of the revelations of the moment, achieving historical data in her debut on Twitch and ranking among the most followed Spanish streamers.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Angela Mármol's Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/marmol.jpg" alt="Angela Mármol">
+                        <h3>Angela Mármol</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>Angela Mármol is a professional influencer, a reference for millions of minors. She has been residing in Andorra since 2020, where she moved to live with her partner, the famous YouTuber Widler.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sofia Surfers' Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/sofiasurfers.jpg" alt="Sofia Surfers">
+                        <h3>Sofia Surfers</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>Sofia Surfers is a Spanish TikToker and influencer born on November 2, 2004, in Alicante. She started her social media career in 2016 when she was 12 years old.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Yeri Mua's Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/yeri.jpg" alt="Yeri Mua">
+                        <h3>Yeri Mua</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>Yeri Mua is a beauty blogger, and some of her followers identify her as the "Bratz Jarocha" due to her physical resemblance to the famous dolls.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lolalolita's Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/lolalolita.jpg" alt="Lolalolita">
+                        <h3>Lolalolita</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>The 20-year-old is a viral phenomenon on social media. She has ten million followers on TikTok alone.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Domelipa's Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/domelipa.jpg" alt="Domelipa">
+                        <h3>Domelipa</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>Domelipa is the most famous Mexican influencer worldwide. The young and beautiful Mexican influencer, Dominik Elizabeth, has become one of the most important influencers on social media at just 22 years old.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bella Poarch's Card -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="../imagenes/poarch.jpg" alt="Bella Poarch">
+                        <h3>Bella Poarch</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contact</button>
+                        </a>
+                        <div class="description">
+                            <p>Bella Poarch, known by her pseudonym Bella Poarch, is a Filipino-born American singer, internet celebrity, and TikToker. In May 2021, she released her debut single "Build a Bitch" with the record label Warner Records.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest of your code -->
+    <!-- ... -->
+
+    <script src="../banderas.js"></script>
+    <script src="talentos.js"></script>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="legal.html">Legal</a>
+        <a href="condiciones.html">Terms</a>
+        <a href="privacidad.html">Privacy</a>
+            <a href="https://instagram.com/msmmagency.es?igshid=MzRlODBiNWFlZA==">Instagram</a>
+            <a href="https://www.tiktok.com/@msmmagency">Tik Tok</a>
+            <a href="https://www.linkedin.com/in/msmm-agency-718617295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>

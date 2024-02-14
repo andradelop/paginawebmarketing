@@ -1,0 +1,149 @@
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000d1e;
+    color: white;
+}
+
+header {
+    background-color: #2f45b1;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilo para el botón de hamburguesa */
+.menu-toggle {
+    background: #d066cd; /* Color de fondo */
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px 12px; /* Espaciado interior */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-left: 20px; /* Agregar margen izquierdo para separar del borde */
+    top: 50%; /* Centra verticalmente el botón en la parte izquierda */
+    transform: translateY(-50%); /* Ajusta la posición vertical */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px; /* Aumenta la altura para dar más espacio */
+    width: 40px; /* Aumenta el ancho para dar más espacio */
+    position: fixed; /* Hace que el botón sea fijo en la ventana */
+    z-index: 999; /* Asegura que esté en la parte superior */
+}
+
+
+
+
+
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.menu-toggle.menu-open .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle.menu-open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.menu-open .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Estilo para el menú de navegación */
+.fullscreen-menu {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.fullscreen-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.fullscreen-menu ul li {
+    margin-bottom: 20px;
+}
+
+.fullscreen-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.fullscreen-menu.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Estilo para el botón "Cerrar" en el menú de navegación */
+#close-menu-button {
+    background-color: #d066cd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px; /* Ajusta la distancia superior para alinear con las categorías */
+    margin-left: 40px; /* Ajusta la distancia izquierda */
+    margin-right: 0px; /* Añade un margen a la derecha para separarlo del borde */
+}
+
+#close-menu-button:hover {
+    background-color: #2f45b1; /* Cambia el color al pasar el cursor por encima */
+}
+
+/* Opcional: Cambia el color de fondo del botón de hamburguesa al pasar el cursor */
+.menu-toggle:hover {
+    background-color: rgb(204, 144, 189);
+}
+.text-block {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+button {
+    background-color: #d066cd;
+    color: #000d1e;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0066;
+}
+
+footer {
+    background-color: #2f45b1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+

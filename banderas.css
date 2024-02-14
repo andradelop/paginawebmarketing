@@ -1,0 +1,33 @@
+/* Estilo del selector de idiomas */
+.language-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    border-radius: 25px; /* Bordes redondos */
+    padding: 10px 10px; /* Espaciado interno */
+}
+
+.language-selector a {
+    margin-right: 10px;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.language-selector a:hover {
+    opacity: 1;
+}
+
+.language-selector a.active {
+    opacity: 1;
+    font-weight: bold; /* Puedes aplicar otros estilos según tu preferencia */
+}
+/* Agrega un estilo para el idioma seleccionado con brillo */
+.language-selector a.selected {
+    opacity: 1;
+    font-weight: bold;
+    /* Agrega otros estilos, como un brillo */
+    filter: brightness(1.2); /* Ajusta el valor para controlar el brillo */
+}

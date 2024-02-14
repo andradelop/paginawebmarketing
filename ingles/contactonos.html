@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../contactanos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../banderas.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <button class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+<!-- Agregar el selector de idiomas con imágenes de banderas -->
+<div class="language-selector">
+    <a href="../contactonos.html">
+        <img src="../imagenes/banderas/es.svg" alt="Español" title="Español">
+    </a>
+    <a href="contactonos.html">
+        <img src="../imagenes/banderas/gb.svg" alt="Inglés" title="Inglés">
+    </a>
+</div>
+    <nav class="fullscreen-menu" id="fullscreen-menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="agencia.html">AGENCY</a></li>
+            <li><a href="servicios.html">SERVICES</a></li>
+            <li><a href="talentos.html">TALENTS</a></li>
+            <li><a href="equipo.html">TEAM</a></li>
+            <li><a href="contactonos.html">CONTACT US</a></li>
+        </ul>
+        <button id="close-menu-button">Close</button>
+    </nav>
+
+    <!-- Rest of your HTML code -->
+
+    <!-- "Identify" Section -->
+    <section class="identification-section">
+        <div class="container">
+            <a href="index.html">
+                <img src="../imagenes/logopng.png" alt="Msmm Agency Logo" class="logo">
+            </a>
+            <h2>We are more than marketing, we are imagination</h2>
+            <p>Identify yourself to get more information.</p>
+            <!-- Identification Form -->
+            <form class="identification-form" action="#" method="post">
+                <input type="text" class="form-input" name="name" placeholder="Name" required>
+                <input type="email" class="form-input" name="email" placeholder="Email" required>
+                <!-- Influencer Selector -->
+                <label for="consult-checkbox">Need a personalized consultation and not sure about the influencer? You can leave the following fields empty.</label>
+                <select class="form-input" name="influencer">
+                    <option value="Other">Other</option>
+                    <option value="auronplay">Auronplay</option>
+                    <option value="HolaSoyGerman">Hola Soy Germán</option>
+                    <option value="rubius">Rubius</option>
+                    <option value="Ibai">Ibai</option>
+                </select>
+                <!-- Text Area for Description (Optional) -->
+                <textarea class="form-input" name="description" placeholder="Description"></textarea>
+                <button class="submit-button" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="../contactanos.js"></script>
+    <script src="../banderas.js"></script>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="legal.html">Legal</a>
+            <a href="condiciones.html">Terms</a>
+            <a href="privacidad.html">Privacy</a>
+            <a href="https://instagram.com/msmmagency.es?igshid=MzRlODBiNWFlZA==">Instagram</a>
+            <a href="https://www.tiktok.com/@msmmagency">Tik Tok</a>
+            <a href="https://www.linkedin.com/in/msmm-agency-718617295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+        </div>
+    </footer>
+    <!-- Rest of your HTML code -->
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msmm Agency</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="talentos.css">
+    <link rel="stylesheet" href="banderas.css">
+    <style>
+        /* Estilo para las palabras con animación */
+        .word-transition {
+            animation: slideDown 1s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <button class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+<!-- Agregar el selector de idiomas con imágenes de banderas -->
+<div class="language-selector">
+    <a href="talentos.html">
+        <img src="imagenes/banderas/es.svg" alt="Español" title="Español">
+    </a>
+    <a href="ingles/talentos.html">
+        <img src="imagenes/banderas/gb.svg" alt="Inglés" title="Inglés">
+    </a>
+</div>
+    <nav class="fullscreen-menu" id="fullscreen-menu">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="agencia.html">AGENCIA</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="talentos.html">TALENTOS</a></li>
+            <li><a href="equipo.html">EQUIPO</a></li>
+            <li><a href="contactonos.html">CONTÁCTANOS</a></li>
+        </ul>
+        <button id="close-menu-button">Cerrar</button>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <a href="index.html">
+                <img src="imagenes/logopng.png" alt="Logo de Msmm Agency" class="logo">
+            </a>
+            <h1>
+                <span id="word1" class="word-transition">NUESTRO TALENTOS</span>
+            </h1>
+        </div>
+    </section>
+
+    <section class="equipo-section">
+        <div class="container">
+            <div class="equipo-row">
+                <!-- Tarjeta de Ibai -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/ibai.jpg" alt="Ibai">
+                        <h3>Ibai</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>Ibai es conocido por su carisma, su humor y su cercanía con sus seguidores. Tiene más de 7 millones de suscriptores en YouTube y más de 9 millones de seguidores en Twitch, donde suele hacer directos de videojuegos, charlas, entrevistas y eventos especiales. Algunos de sus vídeos más famosos son los que hace con futbolistas como Leo Messi, Sergio Agüero o Gerard Piqué.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Auronplay -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/auronplay.jpg" alt="Auronplay">
+                        <h3>Auronplay</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>AuronPlay, un youtuber, streamer y celebridad de internet que se dedica a hacer vídeos de entretenimiento basados en videojuegos, humor, parodias y otros temas. Tiene más de 20 millones de suscriptores en YouTube y 14 millones de seguidores en Twitch.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Rubius -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/rubius.jpg" alt="Rubius">
+                        <h3>Rubius</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>El Rubius es un youtuber, streamer y celebridad de internet hispano-noruego, que se dedica a hacer vídeos de entretenimiento basados en videojuegos, humor, parodias y otros temas. Tiene más de 40 millones de suscriptores en YouTube y 14 millones de seguidores en Twitch. Es el mayor usuario de YouTube en España y uno de los más populares del mundo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Hola Soy Germán -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/german.jpg" alt="Germán">
+                        <h3>Hola Soy Germán</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>Germán Garmendia es un creador de contenido chileno que triunfa en YouTube con sus videos de humor y entretenimiento. Además de ser youtuber, es comediante, cantautor, escritor y activista social. Sus dos canales, HolaSoyGerman y JuegaGerman, suman más de 80 millones de seguidores. Es uno de los influencers más influyentes de Internet.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de Dulceida -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/martadiaz.jpg" alt="MartaDiaz">
+                        <h3>Marta Díaz</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>una influencer con más de 3 millones de seguidores en Instagram que siguen diariamente su vida.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de Dulceida -->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/dulceida.jpg" alt="Dulceida">
+                        <h3>Dulceida</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>Dulceida se ha convertido en la influencer por excelencia de España. Con 3,3 millones de seguidores en Instagram, la catalana comenzó a compartir su vida y su estilo con las redes sociales mucho antes de saber que se podía vivir de ello.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de biyin-->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/biyin.jpg" alt="biyin">
+                        <h3>Biyin</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>Biyín se ha convertido en una de las revelaciones del momento, logrando datos históricos en su debut en Twitch y colándose directamente entre las streamers españolas más seguidas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de Angela mármol-->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/marmol.jpg" alt="biyin">
+                        <h3>Angela Mármol</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>Mármol es de profesión influencer, es una referente para millones de menores de edad. Reside en Andorra desde 2020, donde se trasladó para convivir con su pareja, el también famoso youtuber Widler.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de sofia surfers-->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/sofiasurfers.jpg" alt="biyin">
+                        <h3>Sofia surfers</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>Una tiktoker e influencer española nacida el 2 de noviembre de 2004 en Alicante. Comenzó su carrera en las redes sociales en 2016, cuando tenía 12 años.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de yeri mua-->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/yeri.jpg" alt="biyin">
+                        <h3>Yeri Mua</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>Es una blogger de belleza y algunos de sus seguidores la identifican como la “Bratz jarocha” por su parecido físico con las famosas muñecas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de lolalolita-->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/lolalolita.jpg" alt="biyin">
+                        <h3>Lolalolita</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>La joven, de 20 años, es todo un fenómeno viral en las redes sociales. Solamente en la plataforma TikTok cuenta con diez millones de seguidores.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de domelipa-->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/domelipa.jpg" alt="biyin">
+                        <h3>Domelipa</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p>Domelipa es la influencer mexicana con mayor fama a nivel mundial. La joven y guapa influencer mexicana, Dominik Elizabeth a sus 22 años se ha convertido en una de las influencers más importantes de redes sociales.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de bella poarch-->
+                <div class="equipo-member">
+                    <div class="equipo-member-info">
+                        <img src="imagenes/poarch.jpg" alt="biyin">
+                        <h3>Bella Poarch</h3>
+                        <a href="contactonos.html">
+                            <button class="contact-button">Contactar</button>
+                        </a>
+                        <div class="description">
+                            <p> conocida por su seudónimo Bella Poarch ​ es una cantante, celebridad de internet y tiktoker filipina nacionalizada estadounidense. En mayo de 2021, lanzó su primer sencillo «Build a Bitch» con la discográfica Warner Records.​​​​</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resto de tu código -->
+    <!-- ... -->
+    <script src="banderas.js"></script>
+    <script src="talentos.js"></script>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="legal.html">Legal</a>
+            <a href="condiciones.html">Condiciones</a>
+            <a href="privacidad.html">Privacidad</a>
+            <a href="https://instagram.com/msmmagency.es?igshid=MzRlODBiNWFlZA==">Instagram</a>
+            <a href="https://www.tiktok.com/@msmmagency">Tik Tok</a>
+            <a href="https://www.linkedin.com/in/msmm-agency-718617295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
+        </div>
+    </footer>
+</body>
+</html>

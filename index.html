@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msmm Agency</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="banderas.css">
+    <style>
+        /* Estilo para las palabras con animación */
+        .word-transition {
+            animation: slideDown 1s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <button class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+
+
+
+<!-- Agregar el selector de idiomas con imágenes de banderas -->
+<div class="language-selector">
+    <a href="index.html">
+        <img src="imagenes/banderas/es.svg" alt="Español" title="Español">
+    </a>
+    <a href="ingles/index.html">
+        <img src="imagenes/banderas/gb.svg" alt="Inglés" title="Inglés">
+    </a>
+</div>
+
+
+    <nav class="fullscreen-menu" id="fullscreen-menu">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="agencia.html">AGENCIA</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+            <li><a href="talentos.html">TALENTOS</a></li>
+            <li><a href="equipo.html">EQUIPO</a></li>
+            <li><a href="contactonos.html">CONTÁCTANOS</a></li>
+        </ul>
+        <button id="close-menu-button">Cerrar</button>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <a href="index.html">
+                <img src="imagenes/logopng.png" alt="Logo de Msmm Agency" class="logo">
+              </a>
+              
+            <h1>
+                <span id="word1" class="word-transition">TRANSFORMAMOS</span>
+                INFLUENCIA <br>
+                EN IMPACTO. <br>
+                TU MARCA , EN MANOS DE LOS EXPERTOS <br>
+                EN <span id="word2" class="word-transition">INFLUENCERS</span>
+            </h1>
+            <div class="center-button">
+                <a href="agencia.html">
+                    <button class="btn">SABER MÁS</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- Espacio entre secciones -->
+<div style="height: 100px;"></div>
+
+
+    <!-- Sección de texto -->
+    <section class="text-overlay">
+        <div class="container">
+            <div class="text-block">
+                <h2>EXPERTOS EN MAXIMIZAR LA VISIBILIDAD DE NUESTROS CLIENTES</h2>
+                <p>SOMOS EXPERTOS EN MAXIMIZAR LA VISIBILIDAD A TRAVÉS DE UNA RED ESTRATÉGICA DE CONTACTOS. <br>NUESTRA EXPERIENCIA Y ENFOQUE PROFESIONAL GARANTIZAN EL CUMPLIMIENTO ÓPTIMO DE TUS OBJETIVOS DE VISIBILIDAD Y ALCANCE EN AUDIENCIAS RELEVANTES.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del carrusel -->
+    <section class="carousel-container">
+        <div class="carousel">
+            <img src="imagenes/CAR1.jpg" alt="Imagen carrusel 1">
+            <img src="imagenes/CAR2.jpg" alt="Imagen carrusel 2">
+            <img src="imagenes/CAR3.jpg" alt="Imagen carrusel 3">
+            <img src="imagenes/CAR4.jpg" alt="Imagen carrusel 3">
+        </div>
+
+        <div class="contact-section">
+            <div class="semi-circle">
+                <button class="contact-button">
+                    <a href="contactonos.html">Contáctanos</a>
+                </button>
+                <div class="logo-container">
+                    <img src="imagenes/logoblanco.png" alt="logoblanco y negro">
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+
+
+    <script src="index.js"></script>
+    <script src="banderas.js"></script>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="legal.html">Legal</a>
+            <a href="condiciones.html">Condiciones</a>
+            <a href="privacidad.html">Privacidad</a>
+            <a href="https://instagram.com/msmmagency.es?igshid=MzRlODBiNWFlZA==">Instagram</a>
+            <a href="https://www.tiktok.com/@msmmagency">Tik Tok</a>
+            <a href="https://www.linkedin.com/in/msmm-agency-718617295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
